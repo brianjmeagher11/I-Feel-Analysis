@@ -181,6 +181,20 @@ wheels = [
 ]
 
 [[package]]
+name = "emotionextractor"
+version = "0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "nltk" },
+    { name = "setuptools" },
+    { name = "wheel" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7d/b1/d861f98480f04ec1f0867ea69cf8c5371ac8f38ddb2fe66f84164e43591a/EmotionExtractor-0.0.3.tar.gz", hash = "sha256:b5ddc9f06ceeed7c77716799b965c632de2be892da5edcf18b74573f4b693594", size = 84276, upload-time = "2022-08-08T09:15:13.133Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/50/ea/ef40d6ff373fc4e9cbf71668bfd851cad67c5ea0e7c3e0d53533b912edb5/EmotionExtractor-0.0.3-py3-none-any.whl", hash = "sha256:4e2d395b85f0eb87bba2d56472a657e136a033556239e28b77798662848d4311", size = 83946, upload-time = "2022-08-08T09:15:10.651Z" },
+]
+
+[[package]]
 name = "executing"
 version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -203,6 +217,7 @@ name = "i-feel-analysis"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "emotionextractor" },
     { name = "kagglehub" },
     { name = "nbformat" },
     { name = "nrclex" },
@@ -218,6 +233,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "emotionextractor", specifier = ">=0.0.3" },
     { name = "kagglehub", specifier = ">=0.3.13" },
     { name = "nbformat", specifier = ">=5.10.4" },
     { name = "nrclex", specifier = ">=3.0.0" },
@@ -933,6 +949,15 @@ wheels = [
 ]
 
 [[package]]
+name = "setuptools"
+version = "80.9.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/5d/3bf57dcd21979b887f014ea83c24ae194cfcd12b9e0fda66b957c69d1fca/setuptools-80.9.0.tar.gz", hash = "sha256:f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c", size = 1319958, upload-time = "2025-05-27T00:56:51.443Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl", hash = "sha256:062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922", size = 1201486, upload-time = "2025-05-27T00:56:49.664Z" },
+]
+
+[[package]]
 name = "six"
 version = "1.17.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1032,4 +1057,13 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/24/30/6b0809f4510673dc723187aeaf24c7f5459922d01e2f794277a3dfb90345/wcwidth-0.2.14.tar.gz", hash = "sha256:4d478375d31bc5395a3c55c40ccdf3354688364cd61c4f6adacaa9215d0b3605", size = 102293, upload-time = "2025-09-22T16:29:53.023Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/af/b5/123f13c975e9f27ab9c0770f514345bd406d0e8d3b7a0723af9d43f710af/wcwidth-0.2.14-py2.py3-none-any.whl", hash = "sha256:a7bb560c8aee30f9957e5f9895805edd20602f2d7f720186dfd906e82b4982e1", size = 37286, upload-time = "2025-09-22T16:29:51.641Z" },
+]
+
+[[package]]
+name = "wheel"
+version = "0.45.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/98/2d9906746cdc6a6ef809ae6338005b3f21bb568bea3165cfc6a243fdc25c/wheel-0.45.1.tar.gz", hash = "sha256:661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729", size = 107545, upload-time = "2024-11-23T00:18:23.513Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/2c/87f3254fd8ffd29e4c02732eee68a83a1d3c346ae39bc6822dcbcb697f2b/wheel-0.45.1-py3-none-any.whl", hash = "sha256:708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248", size = 72494, upload-time = "2024-11-23T00:18:21.207Z" },
 ]

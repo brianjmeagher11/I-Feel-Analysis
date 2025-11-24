@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "emotionextractor>=0.0.3",
     "kagglehub>=0.3.13",
     "nbformat>=5.10.4",
     "nrclex>=3.0.0",
